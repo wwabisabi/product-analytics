@@ -38,19 +38,27 @@
 
 1. Клонируйте репозиторий.
 2. Создайте виртуальное окружение и установите зависимости:
-
 ```bash
 python -m venv .venv
 # Windows:
 .venv\Scripts\activate
 # macOS/Linux:
 source .venv/bin/activate
-
-pip install -r requirements.txt
 ```
 
-3. Активируйте его и установите зависимости: `pip install -r requirements.txt`
+3. Установите зависимости: 
+```bash
+pip install -r requirements.txt
+```
 4. Скопируйте `.env.example` в `.env` и укажите свой пароль от PostgreSQL.
-5. Сгенерируйте данные: `python product_analytics_generator.py --output data`
-6. Запустите Jupyter Notebook: `jupyter notebook` и откройте файл `Product_Analytics_Report.ipynb`.
+5. Сгенерируйте данные:
+```bash
+python product_analytics_generator.py --output data
+```
+6. Запустите Jupyter Notebook:
+```bash
+jupyter notebook
+```
+и откройте файл `Product_Analytics_Report.ipynb`.
+
 7. В ноутбуке выполните все ячейки (Run All Cells), чтобы загрузить данные из базы и построить графики.
